@@ -18,7 +18,7 @@ def get_content(url):
 
 
 try:
-    with open("cookie.txt", "r") as fh:
+    with open("cookies.txt", "r") as fh:
         SESSION_COOKIE = fh.read().strip()
 except FileNotFoundError:
     print("cookies.txt: file not found", file=sys.stderr)
